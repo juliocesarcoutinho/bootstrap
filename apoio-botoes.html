@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Apoio Botões</title>
+  </head>
+  <body style="padding-bottom: 200px;width: 600px;margin: 0 auto;">
+    
+    <!-- Botões 
+    formatação padrão
+    formatação especificas
+    formatação com classes
+    -->
+    <h3>Botões</h3>
+    <button type="button" class="btn btn-primary">Clique</button>
+
+    <h3>Botões com diferentes tags</h3>
+    <a class="btn btn-danger" href="#">Link</a>
+    <button class="btn btn-info" type="submit">Submit</button>
+    <input class="btn btn-warning" type="button" value="Button">
+    <input class="btn btn-success" type="reset" value="Input Submit">
+
+    <!-- Botões com contorno -->
+    <h3>Botões com contorno</h3>
+    <button type="button" class="btn btn-outline-primary">Clique</button>
+
+    <!-- Botões com tamanho -->
+    <h3>Botões com tamanho</h3>
+    <button type="button" class="btn btn-danger btn-lg">Clique</button>
+    <button type="button" class="btn btn-warning btn-sm">Clique</button>
+    <button type="button" class="btn btn-info btn-lg btn-block">Clique</button>
+
+    <!--Estados dos botões-->
+    <h3>Estados dos botões</h3>
+    <button type="button" class="btn btn-primary normal">Normal</button>
+    <button type="button" class="btn btn-primary disabled">Inativo</button>
+    <button type="button" class="btn btn-primary active">Ativo</button>
+    <br><br>
+    <button type="button" class="btn btn-primary" data-toggle="button">Alternar</button>
+
+    <!-- Grupos de Botões Horizontal-->
+    <h3>Grupos de Botões Horizontal</h3>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Esquerda</button>
+      <button type="button" class="btn btn-secondary">Meio</button>
+      <button type="button" class="btn btn-secondary">Direita</button>
+    </div> 
+
+    <!-- Grupos de Botões Vertical
+    HOME
+    SOBRE
+    CONTATO
+    -->
+    <h3>Grupos de Botões Vertical</h3>
+    <div class="btn-group-vertical" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Home</button>
+      <button type="button" class="btn btn-secondary">Sobre</button>
+      <button type="button" class="btn btn-secondary">Contato</button>
+    </div> 
+
+    <!--Toolbar de Botões-->
+    <h3>Toolbar de Botões</h3>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+        <button type="button" class="btn btn-secondary">3</button>
+        <button type="button" class="btn btn-secondary">4</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-secondary">5</button>
+        <button type="button" class="btn btn-secondary">6</button>
+        <button type="button" class="btn btn-secondary">7</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-secondary">8</button>
+      </div>
+
+      <br><br>
+
+      <!--Botões dropdown-->
+      <h3>Botões dropdown</h3>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Ação</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Clique</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Ação</a>
+          <a class="dropdown-item" href="#">Outra ação</a>
+          <a class="dropdown-item" href="#">Algo mais aqui</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Link separado</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
