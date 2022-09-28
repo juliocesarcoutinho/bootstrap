@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Formulario</title>
+  </head>
+  <body style="margin-bottom: 200px;padding: 16px;">
+    
+    <!-- Formularios -->
+    <form>
+      <!-- Formulario de texto -->
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" class="form-control form-control-sm" id="nome" placeholder="Digite seu Usuario">
+      </div> 
+      <!--Formulario de email--> 
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Digite seu email" readonly>
+        <small class="form-text"> Seu email sera validado</small>
+      </div>
+     <!--Formulario com select-->
+      <div class="form-group">
+        <label for="select">Selecione</label>
+        <select class="form-control" id="estados">
+          <option>Selecione</option>
+          <option>Acre</option>
+          <option>Alagoas</option>
+          <option>Amapa</option>
+          <option>...</option>
+        </select>
+      </div>
+      <!--Formulario com textarea-->
+      <div class="form-group">
+        <label for="textarea">Mensagem</label>
+        <textarea class="form-control" id="textarea" rows="3"></textarea>
+      </div>
+
+      <!--Input file -->
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Arquivo</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+
+      
+      
+      <!--Custom file-->
+      <div class="mb-5">
+        <label class="form-label" for="customFile">Selecione um arquivo</label>
+        <input type="file" class="form-control" id="customFile">        
+      </div> 
+      
+      <!--Range-->
+      <div class="mb-5">
+        <label for="customRange1" class="form-label">Satisfação</label>
+        <input type="range" class="form-range" min="0" max="5" id="customRange1">
+      </div> 
+      <!--Button-->
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    
+    <br><br>
+
+    <!--Formulario inline-->
+    <form class="d-inline">
+      <input class="form-control me-2" type="text" placeholder="Digite seu usuario">
+      <input class="form-control me-2" type="password" placeholder="Digite sua senha">
+      <button class="btn btn-outline-success" type="submit">Entrar</button>
+    </form> 
+
+    <!-- Validação de Formulario-->
+    <form class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="validationCustom01" class="form-label">Primeiro nome</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="validationCustom02" class="form-label">Ultimo Nome</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="validationCustomUsername" class="form-label">Nome de Usuario</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Dados não preenchidos.
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="validationCustom03" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Por favor digite sua cidade.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="validationCustom04" class="form-label">Estado</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+        <div class="invalid-feedback">
+          Por favor digite seu estado.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="validationCustom05" class="form-label">Cep</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Por favor digite seu cep.
+        </div>
+      </div>
+      <button>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Concordo com os termos e condições
+          </label>
+          <div class="invalid-feedback">
+            Você deve concordar antes de enviar.
+          </div>
+        </div>
+      </button>
+    </div>
+   </form> 
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>

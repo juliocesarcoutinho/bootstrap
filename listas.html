@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body style="margin-bottom: 200px;padding: 16px;">
+    
+    <!-- Listas -->
+    <ul class="list-group">
+      <li class="list-group-item">Menu item de lista 1</li>
+      <li class="list-group-item">Menu item de lista 2</li>
+      <li class="list-group-item">Menu item de lista 3</li>
+      <li class="list-group-item">Menu item de lista 4</li>
+    </ul>
+    <br><br>
+
+    <!--Listas com classe flush-->
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Menu item de lista 1</li>
+      <li class="list-group-item">Menu item de lista 2</li>
+      <li class="list-group-item">Menu item de lista 3</li>
+      <li class="list-group-item">Menu item de lista 4</li>
+    </ul>  
+
+      <br><br>
+    
+    <!--Lista com Links-->
+    <ul class="list-group">
+      <li class="list-group-item"><a href="#">Menu item de lista 1</a></li>
+      <li class="list-group-item"><a href="#">Menu item de lista 2</a></li>
+      <li class="list-group-item"><a href="#">Menu item de lista 3</a></li>
+      <li class="list-group-item"><a href="#">Menu item de lista 4</a></li>
+    </ul>
+
+    <br><br>
+
+    <!--Lista com Links e classe contextuais
+    classe: list-group-item-primary, list-group-item-secondary, list-group-item-success, list-group-item-danger, list-group-item-warning, list-group-item-info, list-group-item-light, list-group-item-dark
+    -->
+
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-primary"><a href="#">Primary</a></li>
+      <li class="list-group-item list-group-item-secondary"><a href="#">Secundary</a></li>
+      <li class="list-group-item list-group-item-success"><a href="#">Success</a></li>
+      <li class="list-group-item list-group-item-danger"><a href="#">Danger</a></li>
+    </ul> 
+
+    <br><br>
+
+    <!-- lista com Badge
+    classe: badge-<opções>
+    opções: primary, secondary, success, danger, warning, info, light, dark  
+    -->
+
+    <ul class="list-group">
+      <li class="list-group-item">Menu de lista 1</li>
+      <li class="list-group-item">Menu de lista 2</li>
+      <li class="list-group-item">
+        Caixa de Entrada
+        <span class="badge badge-primary bg-danger">120</span>
+      </li>
+      <li class="list-group-item">Itens enviados
+        <span class="badge badge-primary bg-success">20</span>
+      </li>
+    </ul>
+
+    <br><br>
+
+    <!-- Lista com breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item">Noticias</li>
+        <li class="breadcrumb-item active" aria-current="page">Usuarios</li>
+      </ol>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
